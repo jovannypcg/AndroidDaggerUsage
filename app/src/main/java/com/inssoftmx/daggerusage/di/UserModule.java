@@ -1,0 +1,40 @@
+package com.inssoftmx.daggerusage.di;
+
+import com.inssoftmx.daggerusage.model.User;
+
+import dagger.Module;
+import dagger.Provides;
+
+/**
+ * Provides methods to inject the User class.
+ *
+ * @author  OCPJP Jovanny Pablo Cruz Gomez.
+ *          Software Engineer.
+ *          jovannypcg@yahoo.com
+ *
+ * @version 1.0.
+ */
+@Module
+public class UserModule {
+    /**
+     * The user to be injected.
+     */
+    private User user;
+
+    /**
+     * Constructur.
+     * @param user The user to be injected.
+     */
+    public UserModule(User user) {
+        this.user = user;
+    }
+
+    /**
+     * Provides the user to be injected.
+     * @return The user to be injected.
+     */
+    @Provides
+    public User provideUser() {
+        return user;
+    }
+}
