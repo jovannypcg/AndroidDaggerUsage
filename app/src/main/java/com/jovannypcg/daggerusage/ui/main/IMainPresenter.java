@@ -19,4 +19,17 @@ public interface IMainPresenter {
      * @param user The user.
      */
     void showInformationFrom(User user);
+
+    /**
+     * Inserts a user into the database.
+     *
+     * @param user The user to be inserted.
+     * @return true if the user was correctly inserted, false otherwise.
+     */
+    boolean insertUser(User user);
+
+    /**
+     * Shows the saved users in a text view.
+     */
+    void showSavedUsers();
 }

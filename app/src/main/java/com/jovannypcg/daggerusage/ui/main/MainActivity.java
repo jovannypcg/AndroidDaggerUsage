@@ -8,6 +8,7 @@ import android.widget.TextView;
 import com.jovannypcg.daggerusage.Application;
 import com.jovannypcg.daggerusage.R;
 import com.jovannypcg.daggerusage.model.User;
+import com.jovannypcg.daggerusage.repository.schema.IUserSchema;
 
 import javax.inject.Inject;
 
@@ -28,6 +29,9 @@ public class MainActivity extends AppCompatActivity implements MainView {
      * The injected user.
      */
     @Inject User user;
+
+    @Inject
+    IUserSchema userSchema;
 
     /**
      * The text view that will show the user information.
@@ -50,8 +54,14 @@ public class MainActivity extends AppCompatActivity implements MainView {
         ((Application) getApplication()).getComponent().inject(this);
         ButterKnife.bind(this);
 
+        user.setName("Pablo");
+        user.setAge(45);
+        user.setEmail("pablo.marmol@gmail.com");
+
         presenter = new MainPresenter(this);
         presenter.showInformationFrom(user);
+        presenter.insertUser(user);
+        presenter.showSavedUsers();
     }
 
     /**
@@ -60,5 +70,10 @@ public class MainActivity extends AppCompatActivity implements MainView {
     @Override
     public TextView getTextView() {
         return tv;
+    }
+
+    @Override
+    public IUserSchema getUserSchema() {
+        return userSchema;
     }
 }

@@ -2,6 +2,7 @@ package com.jovannypcg.daggerusage;
 
 import com.jovannypcg.daggerusage.di.AppComponent;
 import com.jovannypcg.daggerusage.di.AppModule;
+import com.jovannypcg.daggerusage.di.DBModule;
 import com.jovannypcg.daggerusage.di.DaggerAppComponent;
 import com.jovannypcg.daggerusage.di.UserModule;
 import com.jovannypcg.daggerusage.model.User;
@@ -26,6 +27,7 @@ public class Application extends android.app.Application {
         component = DaggerAppComponent.builder()
                 .appModule(new AppModule(this))
                 .userModule(new UserModule(new User("Jovanny", 23, "jovannypcg@yahoo.com")))
+                .dBModule(new DBModule(this, getApplicationContext()))
                 .build();
     }
 
