@@ -1,4 +1,4 @@
-package com.inssoftmx.daggerusage.model;
+package com.jovannypcg.daggerusage.model;
 
 public class User {
     private String name;

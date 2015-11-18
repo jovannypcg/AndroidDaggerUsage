@@ -1,4 +1,4 @@
-package com.inssoftmx.daggerusage.ui.main;
+package com.jovannypcg.daggerusage.ui.main;
 
 import android.widget.TextView;
 

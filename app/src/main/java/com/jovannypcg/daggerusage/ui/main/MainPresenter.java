@@ -1,6 +1,6 @@
-package com.inssoftmx.daggerusage.ui.main;
+package com.jovannypcg.daggerusage.ui.main;
 
-import com.inssoftmx.daggerusage.model.User;
+import com.jovannypcg.daggerusage.model.User;
 
 /**
  * Provides methods which contain the programming logic to

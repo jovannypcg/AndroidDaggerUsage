@@ -1,17 +1,13 @@
-package com.inssoftmx.daggerusage.ui.main;
+package com.jovannypcg.daggerusage.ui.main;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
-import android.view.View;
 import android.widget.TextView;
 
-import com.inssoftmx.daggerusage.Application;
-import com.inssoftmx.daggerusage.R;
-import com.inssoftmx.daggerusage.model.User;
+import com.jovannypcg.daggerusage.Application;
+import com.jovannypcg.daggerusage.R;
+import com.jovannypcg.daggerusage.model.User;
 
 import javax.inject.Inject;
 

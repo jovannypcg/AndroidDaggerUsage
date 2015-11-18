@@ -1,4 +1,4 @@
-package com.inssoftmx.daggerusage.di;
+package com.jovannypcg.daggerusage.di;
 
 import android.app.Application;
 

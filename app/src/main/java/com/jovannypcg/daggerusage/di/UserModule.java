@@ -1,6 +1,6 @@
-package com.inssoftmx.daggerusage.di;
+package com.jovannypcg.daggerusage.di;
 
-import com.inssoftmx.daggerusage.model.User;
+import com.jovannypcg.daggerusage.model.User;
 
 import dagger.Module;
 import dagger.Provides;

@@ -1,10 +1,10 @@
-package com.inssoftmx.daggerusage;
+package com.jovannypcg.daggerusage;
 
-import com.inssoftmx.daggerusage.di.AppComponent;
-import com.inssoftmx.daggerusage.di.AppModule;
-import com.inssoftmx.daggerusage.di.DaggerAppComponent;
-import com.inssoftmx.daggerusage.di.UserModule;
-import com.inssoftmx.daggerusage.model.User;
+import com.jovannypcg.daggerusage.di.AppComponent;
+import com.jovannypcg.daggerusage.di.AppModule;
+import com.jovannypcg.daggerusage.di.DaggerAppComponent;
+import com.jovannypcg.daggerusage.di.UserModule;
+import com.jovannypcg.daggerusage.model.User;
 
 /**
  * The application class.

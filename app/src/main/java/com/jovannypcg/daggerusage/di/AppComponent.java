@@ -1,6 +1,6 @@
-package com.inssoftmx.daggerusage.di;
+package com.jovannypcg.daggerusage.di;
 
-import com.inssoftmx.daggerusage.ui.main.MainActivity;
+import com.jovannypcg.daggerusage.ui.main.MainActivity;
 
 import javax.inject.Singleton;
 
